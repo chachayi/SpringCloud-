@@ -1,0 +1,14 @@
+server:
+  port: 8766
+
+spring:
+  application:
+    name: client-zuul
+
+eureka:
+  client:
+    service-url:
+      defualtZone: http://server2:8761/eureka/
+#      这里写一个都行，因为 Eureka Server 是相互注册，高可用注册中心
+
+
